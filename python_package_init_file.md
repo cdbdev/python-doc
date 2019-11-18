@@ -7,6 +7,7 @@ Python 3.3+ has implicit namespace packages that allow you to create packages wi
 
 Namespace packages are a special kind of package that allows you to unify two packages with the same name at different points on your Python-path. For example, consider path1 and path2 as separate entries on your Python-path:
 
+```
 path1
 +--namespace
       +--module1.py
@@ -15,6 +16,7 @@ path2
 +--namespace
       +--module3.py
       +--module4.py
+```
 
 With this arrangement you should be able to do the following:
 
