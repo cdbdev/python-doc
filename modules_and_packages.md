@@ -25,6 +25,53 @@ names should be all lowercase, without underscores if at all avoidable**. To put
 # 2. Modules and Packages
 `Any Python (.py) file is a module, and a bunch of modules in a directory is a package.`
 
-Well...almost. There's one other thing you have to do to a directory to make it a package, and that's to stick a file 
-called `__init__.py` into it. You actually don't have to put anything into that file. It just has to be there.
-> _Remark:_ As of **PEP 420 -- Implicit Namespace Packages**, the `__init__.py` file is not always necessary. See: [Python package init file](python_package_init_file.md).
+Besides collecting modules into a directory, there is another requirement to define a directory as a package.
+The key to designing a package is by adding an `__init__.py` file into that directory. This will define what gets 
+brought into the namespace with the import statement. You actually don't have to put anything into that file. It just 
+has to be there. It can also execute initialization code for the package or set the `__all__` variable, but more on 
+that later.
+
+If you do forget `__init__.py` in your package, it will be defined as an implicit namespace package. 
+
+> _Remark:_ As of **PEP 420 -- Implicit Namespace Packages**, the `__init__.py` file is not always necessary. 
+See: [Python package init file](python_package_init_file.md).
+
+Let's take a look at a recommended structure:
+
+```
+examplepackage-git/
+├── examplepackage
+│   ├── __init__.py
+│   ├── app.py
+│   ├── common
+│   │   ├── __init__.py
+│   │   ├── enums.py
+│   ├── model
+│   │   ├── __init__.py
+│   │   ├── nice_model.py
+│   ├── tests
+│   │   ├── __init__.py
+│   │   ├── test_project.py
+│   ├── resources
+├── LICENSE.md
+├── MANIFEST.in
+├── README.md
+├── setup.py
+└── venv
+    ├── bin
+    ├── include
+    ├── lib
+    ├── lib64 -> lib
+    ├── pyvenv.cfg
+    └── share
+```
+
+You'll see that there is one top-level package called `examplepackage`, with three sub-packages: 
+- common
+- model
+- tests
+
+We also have the directory `resources`, but that only contains game audio, images, etc. It is NOT a package, as it 
+doesn't contain an `__init__.py`.
+
+go to: https://dev.to/codemouse92/dead-simple-python-project-structure-and-imports-38c6
