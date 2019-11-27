@@ -367,7 +367,7 @@ However, keep in mind that those "levels" aren't just plain directories, here. T
 distinct packages in a plain directory that is NOT a package, you can't use relative imports to jump from one to 
 another. You'll have to work with the Python search path for that. 
 
-# 6. __main__.py
+# 6. `__main__.py`
 This is a special file in our top-level package that is executed when we run the package directly with Python. 
 The `examplepackage` package can be run from the root of the repository with 
 `python -m examplepackage`.
