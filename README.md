@@ -10,3 +10,4 @@ This repository contains collected documentation for the Python programming lang
 # Links
 https://realpython.com/  
 https://docs.python.org  
+https://dev.to/codemouse92/
