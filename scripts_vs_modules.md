@@ -1,3 +1,4 @@
+# Script vs Module
 In computing, the word script is used to refer to a file containing a logical sequence of orders or a batch processing file. This is 
 usually a simple program, stored in a plain text file.
 
