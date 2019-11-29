@@ -48,6 +48,7 @@ When you try to run Python scripts, a multi-step process begins. In this process
 2. **Compile the source code to an intermediate format known as bytecode**  This bytecode is a translation of the code into a lower-level language that’s platform-independent. Its purpose is to optimize code execution. So, the next time the interpreter runs your code, it’ll bypass this compilation step.
 
 Strictly speaking, this code optimization is only for modules (imported files), not for executable scripts.  
+
 3. **Ship off the code for execution**  At this point, something known as a Python Virtual Machine (PVM) comes into action. The PVM is the runtime engine of Python. It is a cycle that iterates over the instructions of your bytecode to run them one by one.
 
 The PVM is not an isolated component of Python. It’s just part of the Python system you’ve installed on your machine. Technically, the PVM is the last step of what is called the Python interpreter.
