@@ -50,4 +50,4 @@ Possible scenario's:
 - the interpreter could have modifications or extra installed packages interfering with the operation of your application
 - even if the Python interpreter on the target machine is fully compatible, getting your code to run on that interpreter could be difficult! Several Python applications leverage compiled extensions linking against Python's C API. Distributing the precompiled form of the extension can be challenging, especially when your code needs to link against 3rd party libraries, which may conflict with something on the target system. And, the precompiled extensions need to be built in a very delicate manner to ensure they can run on as many target machines as possible
 
-Knowing these scenario's will help you build future standalone apps.
+Knowing these scenario's will help you build future standalone apps so you won't run into unexpected problems.
