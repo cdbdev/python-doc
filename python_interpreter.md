@@ -14,7 +14,7 @@ The interpreter is able to run Python code in two different ways:
 - As a script or module
 - As a piece of code typed into an interactive session
 
-## Run Python Code Interactively
+# Run Python Code Interactively
 
 A widely used way to run Python code is through an interactive session. To start a Python interactive session, just open a command-line or terminal and then type in python, or python3 depending on your Python installation, and then hit <ENTER>.
 
@@ -42,7 +42,7 @@ An interactive session will allow you to test every piece of code you write, whi
 
 To exit interactive mode, you can use the following: `quit()` or `exit()`, which are built-in functions.
 
-## How Does the Interpreter Run Python Scripts?
+# How Does the Interpreter Run Python Scripts?
 When you try to run Python scripts, a multi-step process begins. In this process the interpreter will:
 1. **Process the statements of your script in a sequential fashion**
 2. **Compile the source code to an intermediate format known as bytecode**  This bytecode is a translation of the code into a lower-level language that’s platform-independent. Its purpose is to optimize code execution. So, the next time the interpreter runs your code, it’ll bypass this compilation step. Strictly speaking, this code optimization is only for modules (imported files), not for executable scripts.  
@@ -55,10 +55,10 @@ The whole process to run Python scripts is known as the **Python Execution Model
 
 > **Note**: This description of the Python Execution Model corresponds to the core implementation of the language, that is, CPython. As this is not a language requirement, it may be subject to future changes.
 
-## Run Python Scripts Using the Command-Line
+# Run Python Scripts Using the Command-Line
 A Python interactive session will allow you to write a lot of lines of code, but once you close the session, you lose everything you’ve written. That’s why the usual way of writing Python programs is by using plain text files. By convention, those files will use the .py extension. (On Windows systems the extension can also be .pyw.)
 
-### Using the python Command
+## Using the python Command
 To run Python scripts with the python command, you need to open a command-line and type in the word python, or python3 if you have both versions, followed by the path to your script, just like this:
 
 ```bash
@@ -68,7 +68,7 @@ Hello World!
 
 This is the most basic and practical way to run Python scripts.
 
-### Running Modules With the -m Option
+## Running Modules With the -m Option
 Python offers a series of command-line options that you can use according to your needs. For example, if you want to run a Python module, you can use the command `python -m <module-name>`.
 
 The `-m` option searches `sys.path` for the module name and runs its content as `__main__`:
@@ -78,7 +78,7 @@ $ python3 -m hello
 Hello World!
 ```
 
-### Using the Script Filename
+## Using the Script Filename
 On recent versions of Windows, it is possible to run Python scripts by simply entering the name of the file containing the code at the command prompt:
 
 ```bash
@@ -101,10 +101,10 @@ There are two ways to specify the path to the interpreter:
 
 This last option is useful if you bear in mind that not all Unix-like systems locate the interpreter in the same place.
 
-### Run Python Scripts Interactively
+## Run Python Scripts Interactively
 It is also possible to run Python scripts and modules from an interactive session. This option offers you a variety of possibilities.
 
-**Taking Advantage of import**  
+### Taking Advantage of import
 _When you import a module_, what really happens is that you load its contents for later access and use. The interesting thing about this process is that import runs the code as its final step.
 
 When the module contains only classes, functions, variables, and constants definitions, you probably won’t be aware that the code was actually run, but when the module includes calls to functions, methods, or other statements that generate visible results, then you’ll witness its execution.
@@ -145,5 +145,5 @@ To know what’s in your current PMSP, you can run the following code:
 
 Running this code, you’ll get the list of directories and .zip files where Python searches the modules you import.
 
-**Using importlib and imp**  
+### Using importlib and imp
 In the
