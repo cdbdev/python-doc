@@ -1,5 +1,5 @@
 # Python documentation
-This repository contains collected documentation for the Python programming language.
+This repository contains collected documentation regarding the Python programming language.
 
 # Overview
 [1. Scripts vs Modules](scripts_vs_modules.md)  
