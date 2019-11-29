@@ -104,7 +104,7 @@ This last option is useful if you bear in mind that not all Unix-like systems lo
 ### Run Python Scripts Interactively
 It is also possible to run Python scripts and modules from an interactive session. This option offers you a variety of possibilities.
 
-**Taking Advantage of import**
+**Taking Advantage of import**  
 _When you import a module_, what really happens is that you load its contents for later access and use. The interesting thing about this process is that import runs the code as its final step.
 
 When the module contains only classes, functions, variables, and constants definitions, you probably won’t be aware that the code was actually run, but when the module includes calls to functions, methods, or other statements that generate visible results, then you’ll witness its execution.
@@ -145,4 +145,5 @@ To know what’s in your current PMSP, you can run the following code:
 
 Running this code, you’ll get the list of directories and .zip files where Python searches the modules you import.
 
-**Using importlib and imp**
+**Using importlib and imp**  
+In the
