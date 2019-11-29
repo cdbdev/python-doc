@@ -77,3 +77,28 @@ The `-m` option searches `sys.path` for the module name and runs its content as 
 $ python3 -m hello
 Hello World!
 ```
+
+### Using the Script Filename
+On recent versions of Windows, it is possible to run Python scripts by simply entering the name of the file containing the code at the command prompt:
+
+```bash
+C:\devspace> hello.py
+Hello World!
+```
+
+This is possible because Windows uses the system registry and the file association to determine which program to use for running a particular file.
+
+On Unix-like systems, such as GNU/Linux, you can achieve something similar. You’ll only have to add a first line with the text #!/usr/bin/env python, just as you did with hello.py.
+
+For Python, this is a simple comment, but for the operating system, this line indicates what program must be used to run the file.
+
+This line begins with the #! character combination, which is commonly called **hash bang** or **shebang**, and continues with the path to the interpreter.
+
+There are two ways to specify the path to the interpreter:
+
+- **#!/usr/bin/python**: writing the absolute path
+- **#!/usr/bin/env python**: using the operating system env command, which locates and executes Python by searching the PATH environment variable
+
+This last option is useful if you bear in mind that not all Unix-like systems locate the interpreter in the same place.
+
+### Run Python Scripts Interactively
