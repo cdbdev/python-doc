@@ -35,7 +35,7 @@ This is where PyInstaller comes in to play.
 
 For more information, take a look at: https://realpython.com/pyinstaller-python/
 
-## Problems
+## Standalone app issues
 
 Packaging and application distribution is a hard problem on multiple dimensions. For Python, large aspects of this problem space are 
 more or less solved if you are distributing open source Python libraries and your target audience are developers (use pip and PyPI). 
