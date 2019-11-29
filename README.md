@@ -8,5 +8,5 @@ This repository contains collected documentation for the Python programming lang
 [4. Distributing standalone apps](distribute_standalone_apps.md)  
 
 # Links
-https://realpython.com/
-https://docs.python.org
+https://realpython.com/  
+https://docs.python.org  
