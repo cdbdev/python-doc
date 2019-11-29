@@ -10,4 +10,5 @@ This repository contains collected documentation regarding the Python programmin
 # Links
 https://realpython.com/  
 https://docs.python.org  
-https://dev.to/codemouse92/
+https://dev.to/codemouse92/  
+https://www.learnpython.org/  
