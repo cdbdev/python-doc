@@ -102,3 +102,47 @@ There are two ways to specify the path to the interpreter:
 This last option is useful if you bear in mind that not all Unix-like systems locate the interpreter in the same place.
 
 ### Run Python Scripts Interactively
+It is also possible to run Python scripts and modules from an interactive session. This option offers you a variety of possibilities.
+
+**Taking Advantage of import**
+_When you import a module_, what really happens is that you load its contents for later access and use. The interesting thing about this process is that import runs the code as its final step.
+
+When the module contains only classes, functions, variables, and constants definitions, you probably won’t be aware that the code was actually run, but when the module includes calls to functions, methods, or other statements that generate visible results, then you’ll witness its execution.
+
+This provides you with another option to run Python scripts:
+
+```python
+>>> import hello
+Hello World!
+```
+
+You’ll have to note that this option works only once per session. After the first import, successive import executions do nothing, even if you modify the content of the module. This is because import operations are expensive and therefore run only once. Here’s an example:
+
+```python
+>>> import hello  # Do nothing
+>>> import hello  # Do nothing again
+```
+
+These two import operations do nothing, because Python knows that hello has already been imported.
+
+There are some requirements for this method to work:
+
+- The file with the Python code must be located in your current working directory.
+- The file must be in the **Python Module Search Path (PMSP)**, where Python looks for the modules and packages you import.
+To know what’s in your current PMSP, you can run the following code:
+
+```python
+>>> import sys
+>>> for path in sys.path:
+...     print(path)
+...
+/usr/lib/python36.zip
+/usr/lib/python3.6
+/usr/lib/python3.6/lib-dynload
+/usr/local/lib/python3.6/dist-packages
+/usr/lib/python3/dist-packages
+```
+
+Running this code, you’ll get the list of directories and .zip files where Python searches the modules you import.
+
+**Using importlib and imp**
