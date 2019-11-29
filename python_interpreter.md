@@ -181,3 +181,53 @@ TypeError: reload() argument must be a module
 `importlib.reload()` comes in handy when you are modifying a module and want to test if your changes work, without leaving the current interactive session.
 
 ### Using runpy.run_module() and runpy.run_path()
+The Standard Library includes a module called `runpy`. In this module, you can find `run_module()`, which is a function that allows you to run modules without importing them first. This function returns the globals dictionary of the executed module.
+
+Here’s an example of how you can use it:
+
+```python
+>>> runpy.run_module(mod_name='hello')
+Hello World!
+{'__name__': 'hello',
+    ...
+'_': None}}
+```
+
+The module is located using a standard **import** mechanism and then executed on a fresh module namespace.
+
+The first argument of `run_module()` must be a string with the absolute name of the module (without the **.py** extension).
+
+On the other hand, runpy also provides `run_path()`, which will allow you to run a module by providing its location in the filesystem:
+
+```python
+>>> import runpy
+>>> runpy.run_path(file_path='hello.py')
+Hello World!
+{'__name__': '<run_path>',
+    ...
+'_': None}}
+```
+
+Like `run_module()`, `run_path()` returns the **globals** dictionary of the executed module.
+
+The `file_path` parameter must be a string and can refer to the following:
+
+- The location of a Python source file
+- The location of a compiled bytecode file
+- The value of a valid entry in the `sys.path`, containing a `__main__` module (`__main__.py` file)
+
+### Hacking exec()
+So far, you’ve seen the most commonly used ways to run Python scripts. In this section, you’ll see how to do that by using `exec()`, which is a built-in function that supports the dynamic execution of Python code.
+
+`exec()` provides an alternative way for running your scripts:
+
+```python
+>>> exec(open('hello.py').read())
+'Hello World!'
+```
+
+This statement opens **hello.py**, reads its content, and sends it to `exec()`, which finally runs the code.
+
+The above example is a little bit out there. It’s just a “hack” that shows you how versatile and flexible Python can be.
+
+For more information on running your scripts from an IDE, Text Editor or File Manager, take a look at: https://realpython.com/run-python-scripts/
