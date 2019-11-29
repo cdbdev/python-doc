@@ -54,3 +54,26 @@ The PVM is not an isolated component of Python. It’s just part of the Python s
 The whole process to run Python scripts is known as the **Python Execution Model**.
 
 > **Note**: This description of the Python Execution Model corresponds to the core implementation of the language, that is, CPython. As this is not a language requirement, it may be subject to future changes.
+
+## Run Python Scripts Using the Command-Line
+A Python interactive session will allow you to write a lot of lines of code, but once you close the session, you lose everything you’ve written. That’s why the usual way of writing Python programs is by using plain text files. By convention, those files will use the .py extension. (On Windows systems the extension can also be .pyw.)
+
+### Using the python Command
+To run Python scripts with the python command, you need to open a command-line and type in the word python, or python3 if you have both versions, followed by the path to your script, just like this:
+
+```bash
+$ python3 hello.py
+Hello World!
+```
+
+This is the most basic and practical way to run Python scripts.
+
+## Running Modules With the -m Option
+Python offers a series of command-line options that you can use according to your needs. For example, if you want to run a Python module, you can use the command `python -m <module-name>`.
+
+The `-m` option searches `sys.path` for the module name and runs its content as `__main__`:
+
+```bash
+$ python3 -m hello
+Hello World!
+```
