@@ -33,6 +33,8 @@ in the last few years with the prevalence of wheels, but some dependencies still
 This barrier to entry is way too high if your goal is to make an application available to as many users as possible. 
 This is where PyInstaller comes in to play.
 
+For more information, take a look at: https://realpython.com/pyinstaller-python/
+
 ## Problems
 
 Packaging and application distribution is a hard problem on multiple dimensions. For Python, large aspects of this problem space are 
