@@ -146,4 +146,38 @@ To know what’s in your current PMSP, you can run the following code:
 Running this code, you’ll get the list of directories and .zip files where Python searches the modules you import.
 
 ### Using importlib and imp
-In the
+In the **Python Standard Library**, you can find `importlib`, which is a module that provides `import_module()`.
+
+With `import_module()`, you can emulate an import operation and, therefore, execute any module or script. Take a look at this example:
+
+```python
+>>> import importlib
+>>> importlib.import_module('hello')
+Hello World!
+<module 'hello' from '/home/username/hello.py'>
+```
+
+Once you’ve imported a module for the first time, you won’t be able to continue using import to run it. In this case, you can use importlib.reload(), which will force the interpreter to re-import the module again, just like in the following code:
+
+```python
+>>> import hello  # First import
+Hello World!
+>>> import hello  # Second import, which does nothing
+>>> import importlib
+>>> importlib.reload(hello)
+Hello World!
+<module 'hello' from '/home/username/hello.py'>
+```
+
+An important point to note here is that the argument of `reload()` has to be the name of a module object, not a string:
+
+```python
+>>> importlib.reload('hello')
+Traceback (most recent call last):
+    ...
+TypeError: reload() argument must be a module
+```
+
+`importlib.reload()` comes in handy when you are modifying a module and want to test if your changes work, without leaving the current interactive session.
+
+### Using runpy.run_module() and runpy.run_path()
