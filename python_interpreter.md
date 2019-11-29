@@ -29,6 +29,15 @@ The standard prompt for the interactive mode is >>>, so as soon as you see these
 
 Now, you can write and run Python code as you wish, with the only drawback being that when you close the session, your code will be gone.
 
+```python
+>>> print('Hello World!')
+Hello World!
+>>> 2 + 5
+7
+>>> print('Welcome to Real Python!')
+Welcome to Real Python!
+```
+
 An interactive session will allow you to test every piece of code you write, which makes it an awesome development tool and an excellent place to experiment with the language and test Python code on the fly.
 
 To exit interactive mode, you can use the following: `quit()` or `exit()`, which are built-in functions.
