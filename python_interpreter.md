@@ -43,4 +43,13 @@ An interactive session will allow you to test every piece of code you write, whi
 To exit interactive mode, you can use the following: `quit()` or `exit()`, which are built-in functions.
 
 ## How Does the Interpreter Run Python Scripts?
+When you try to run Python scripts, a multi-step process begins. In this process the interpreter will:
+1. **Process the statements of your script in a sequential fashion**
+2. **Compile the source code to an intermediate format known as bytecode**  This bytecode is a translation of the code into a lower-level language that’s platform-independent. Its purpose is to optimize code execution. So, the next time the interpreter runs your code, it’ll bypass this compilation step.
 
+Strictly speaking, this code optimization is only for modules (imported files), not for executable scripts.
+3. **Ship off the code for execution**  At this point, something known as a Python Virtual Machine (PVM) comes into action. The PVM is the runtime engine of Python. It is a cycle that iterates over the instructions of your bytecode to run them one by one.
+
+The PVM is not an isolated component of Python. It’s just part of the Python system you’ve installed on your machine. Technically, the PVM is the last step of what is called the Python interpreter.
+
+The whole process to run Python scripts is known as the **Python Execution Model**.
