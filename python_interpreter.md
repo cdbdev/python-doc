@@ -52,3 +52,5 @@ When you try to run Python scripts, a multi-step process begins. In this process
 The PVM is not an isolated component of Python. It’s just part of the Python system you’ve installed on your machine. Technically, the PVM is the last step of what is called the Python interpreter.
 
 The whole process to run Python scripts is known as the **Python Execution Model**.
+
+> **Note**: This description of the Python Execution Model corresponds to the core implementation of the language, that is, CPython. As this is not a language requirement, it may be subject to future changes.
