@@ -106,6 +106,13 @@ Here if you want to run `mod1.py` (which depends on `mod2.py`), you have to run 
 ```bash
 python -m sub1.mod1
 ```
+If we were to run: `python mod1.py`, we would get the following error:
+```bash
+Traceback (most recent call last):
+  File "mod1.py", line 1, in <module>
+    import sub2.mod2 as mod2
+ModuleNotFoundError: No module named 'sub2'
+```
 
 ## Using the Script Filename
 On recent versions of Windows, it is possible to run Python scripts by simply entering the name of the file containing the code at the command prompt:
