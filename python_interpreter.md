@@ -77,6 +77,21 @@ The `-m` option searches `sys.path` for the module name and runs its content as 
 $ python3 -m hello
 Hello World!
 ```
+This option is especially useful if you want to run a module that depends on another module, but resides in a subdirectory.  
+Example:
+```bash
+modtest-git/
+├── modtest
+│   ├── sub1
+│   │   ├── mod1.py
+│   ├── sub2
+│   │   ├── mod2.py
+│   ├── main_prog.py
+```
+Here if you want to run `mod1.py` (which depends on `mod2.py`), you have to run the following from within directory 'modtest':
+```bash
+python -m sub1.mod1
+```
 
 ## Using the Script Filename
 On recent versions of Windows, it is possible to run Python scripts by simply entering the name of the file containing the code at the command prompt:
