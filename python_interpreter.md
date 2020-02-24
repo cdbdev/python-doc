@@ -106,7 +106,7 @@ Here if you want to run `mod1.py` (which depends on `mod2.py`), you have to run 
 ```bash
 python -m sub1.mod1
 ```
-If we were to run: `python mod1.py`, we would get the following error:
+We would've gotten an error if we ran the module inside the 'sub1' directory with: `python mod1.py`
 ```bash
 Traceback (most recent call last):
   File "mod1.py", line 1, in <module>
