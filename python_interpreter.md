@@ -88,7 +88,18 @@ modtest-git/
 │   │   ├── mod2.py
 │   ├── main_prog.py
 ```
-Here if you want to run `mod1.py` (which depends on `mod2.py`), you have to run the following from within directory 'modtest':
+
+Code of `mod1.py`:
+```python
+import sub2.mod2 as mod2
+
+def print_hello():
+	print(mod2.rev("ih"))
+    
+if __name__ == '__main__':
+    print_hello()
+```
+Here if you want to run `mod1.py` (which depends on `mod2.py`), you have to run the following from within the directory 'modtest':
 ```bash
 python -m sub1.mod1
 ```
