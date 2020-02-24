@@ -102,7 +102,7 @@ Code of `mod2.py`:
 def rev(str):
 	return str[::-1]
 ```
-Here if you want to run `mod1.py` (which depends on `mod2.py`), you have to run the following from within the directory 'modtest':
+Here if you want to run `mod1.py` (which depends on `mod2.py`), you have to run the following from within the 'modtest' directory:
 ```bash
 python -m sub1.mod1
 ```
