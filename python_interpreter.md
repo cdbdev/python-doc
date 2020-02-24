@@ -77,7 +77,7 @@ The `-m` option searches `sys.path` for the module name and runs its content as 
 $ python3 -m hello
 Hello World!
 ```
-This option is especially useful if you want to run a module that depends on another module, but resides in a subdirectory.  
+This option is especially useful if you want to run a module that depends on another module (module path).  
 Example:
 ```bash
 modtest-git/
