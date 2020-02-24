@@ -87,7 +87,6 @@ modtest-git/
 │   ├── sub2
 │   │   ├── mod2.py
 ```
-
 Code of `mod1.py`:
 ```python
 import sub2.mod2 as mod2
@@ -97,6 +96,11 @@ def print_hello():
     
 if __name__ == '__main__':
     print_hello()
+```
+Code of `mod2.py`:
+```python
+def rev(str):
+	return str[::-1]
 ```
 Here if you want to run `mod1.py` (which depends on `mod2.py`), you have to run the following from within the directory 'modtest':
 ```bash
