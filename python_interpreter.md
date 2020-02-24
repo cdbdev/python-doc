@@ -86,7 +86,6 @@ modtest-git/
 │   │   ├── mod1.py
 │   ├── sub2
 │   │   ├── mod2.py
-│   ├── main_prog.py
 ```
 
 Code of `mod1.py`:
