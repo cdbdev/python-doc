@@ -396,7 +396,7 @@ of `examplepackage/model/nice_model.py`, when that module got imported (and thus
 "examplepackage.model.nice_model" printed out.
 
 When a module is run directly via `python -m some_module`, that module is assigned a special value of `__name__`: 
-"**main**".
+"**`__main__`**".
 
 Thus, if `__name__ == '__main__':` is actually checking if the module is being executed as the _main_ module. If it is, 
 it runs the code under the conditional.
