@@ -21,6 +21,13 @@ Step 2a: Optionally inherit the system site packages
 ```shell
 $ python3 -m venv my_venv --system-site-packages
 ```
+Step 3: Activate the virtual environment  
+To use a virtual environment, you activate and deactivate them. This will modify your PATH environment variable.
+
+```shell
+$ my_venv/bin/activate
+```
+
 
 For more info, see: [https://realpython.com/python-virtual-environments-a-primer/](https://realpython.com/python-virtual-environments-a-primer/) and  
 [https://www.devdungeon.com/content/python-virtual-environments-tutorial](https://www.devdungeon.com/content/python-virtual-environments-tutorial)
