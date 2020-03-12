@@ -17,3 +17,5 @@ Step 2: Create a new virtual environment inside the directory
 ```shell
 $ python3 -m venv env
 ```
+
+For more info, see: [ ](https://realpython.com/python-virtual-environments-a-primer/).
