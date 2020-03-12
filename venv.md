@@ -9,11 +9,11 @@ Since version 3.5, the use of `venv` is recommended for creating virtual environ
 
 **Steps:**
 
-1) Start by making a new directory to work with:
+Step 1: Start by making a new directory to work with
 ```shell
 $ mkdir python-virtual-environments && cd python-virtual-environments
 ```
-2. Create a new virtual environment inside the directory:
+Step 2: Create a new virtual environment inside the directory
 ```shell
 $ python3 -m venv env
 ```
