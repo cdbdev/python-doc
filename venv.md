@@ -23,7 +23,7 @@ $ python3 -m venv my_venv --system-site-packages
 ```
 Step 3: Activate the virtual environment  
 
-To use a virtual environment, you activate and deactivate them. This will modify your PATH environment variable.
+To use a virtual environment, you activate and deactivate them.
 
 ```shell
 $ my_venv/bin/activate
