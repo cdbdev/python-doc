@@ -22,6 +22,7 @@ Step 2a: Optionally inherit the system site packages
 $ python3 -m venv my_venv --system-site-packages
 ```
 Step 3: Activate the virtual environment  
+
 To use a virtual environment, you activate and deactivate them. This will modify your PATH environment variable.
 
 ```shell
@@ -33,6 +34,11 @@ Once activated, you use python and pip like normal, except they will point to yo
 - Python will have access to the site packages from the virtual environment only
 - pip packages and things installed with setup.py will go in your virtual environment's site packages
 - Your PATH will be updated to include the Python virtual environment's script directory. Any executables installed through a package will be available in your shell path.
+
+Step 4: Deactivate/exit virtual environment
+```shell
+$ deactivate
+```
 
 For more info, see: [https://realpython.com/python-virtual-environments-a-primer/](https://realpython.com/python-virtual-environments-a-primer/) and  
 [https://www.devdungeon.com/content/python-virtual-environments-tutorial](https://www.devdungeon.com/content/python-virtual-environments-tutorial)
