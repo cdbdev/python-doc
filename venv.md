@@ -27,7 +27,12 @@ To use a virtual environment, you activate and deactivate them. This will modify
 ```shell
 $ my_venv/bin/activate
 ```
+Once activated, you use python and pip like normal, except they will point to your virtual environment. When you activate a virtual environment, a few other things happen:
 
+- python and pip in your PATH switches to the virtual environment Python
+- Python will have access to the site packages from the virtual environment only
+- pip packages and things installed with setup.py will go in your virtual environment's site packages
+- Your PATH will be updated to include the Python virtual environment's script directory. Any executables installed through a package will be available in your shell path.
 
 For more info, see: [https://realpython.com/python-virtual-environments-a-primer/](https://realpython.com/python-virtual-environments-a-primer/) and  
 [https://www.devdungeon.com/content/python-virtual-environments-tutorial](https://www.devdungeon.com/content/python-virtual-environments-tutorial)
