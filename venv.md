@@ -7,7 +7,7 @@ To work with this, you create a virtual environment in Python. It enables multip
 # Using Virtual Environments
 Since version 3.5, the use of `venv` is recommended for creating virtual environments. If you are using Python 3, then you should already have the `venv` module from the standard library installed.
 
-**Steps:**
+Follow below steps to create and use a virtual environment:
 
 Step 1: Start by making a new directory to work with
 ```shell
