@@ -15,7 +15,12 @@ $ mkdir python-virtual-environments && cd python-virtual-environments
 ```
 Step 2: Create a new virtual environment inside the directory
 ```shell
-$ python3 -m venv env
+$ python3 -m venv my_env
+```
+Step 2a: Optionally inherit the system site packages
+```shell
+$ python3 -m venv my_venv --system-site-packages
 ```
 
-For more info, see: [https://realpython.com/python-virtual-environments-a-primer/](https://realpython.com/python-virtual-environments-a-primer/).
+For more info, see: [https://realpython.com/python-virtual-environments-a-primer/](https://realpython.com/python-virtual-environments-a-primer/) and  
+[https://www.devdungeon.com/content/python-virtual-environments-tutorial](https://www.devdungeon.com/content/python-virtual-environments-tutorial)
