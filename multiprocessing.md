@@ -12,4 +12,11 @@ Bypassing the GIL when executing Python code allows the code to run faster becau
 
 In this simplified example, assuming all three threads had identical runtimes, the multiprocessing solution would cut total execution time by a third. But this reduction isn’t exactly proportionate to the number of processors available because of the overhead involved in creating multiprocessing processes, but the gains represent a significant improvement over single-core operations.
 
+# Three requirements for multiprocessing
+Before you can begin multiprocessing, you need to pick which sections of code to multiprocess. These sections of code must meet the following criteria:
+
+1. Must not be reliant on previous outcomes
+2. Does not need to be executed in a particular order
+3. Does not return anything that would need to be accessed later in the code
+
 _For reference see: https://medium.com/@urban_institute/using-multiprocessing-to-make-python-code-faster-23ea5ef996ba_
