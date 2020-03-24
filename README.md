@@ -10,6 +10,7 @@ This repository contains collected documentation regarding the Python programmin
 [6. Namespace packages](doc/python_package_init_file.md)  
 [7. Virtual environments](doc/venv.md)  
 [8. Multiprocessing](doc/multiprocessing.md)  
+[9. Calling C from Python](doc/python_bindings.md)  
 
 # Links
 https://realpython.com/  
