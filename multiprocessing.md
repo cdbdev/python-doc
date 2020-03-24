@@ -19,4 +19,33 @@ Before you can begin multiprocessing, you need to pick which sections of code to
 2. Does not need to be executed in a particular order
 3. Does not return anything that would need to be accessed later in the code
 
+# Example
+```python
+import time
+
+def basic_func(x):
+    if x == 0:
+        return 'zero'
+    elif x%2 == 0:
+        return 'even'
+    else:
+        return 'odd'
+    
+starttime = time.time()
+for i in range(0,10):
+    y = i*i
+    time.sleep(2)
+    print('{} squared results in a/an {} number'.format(i, basic_func(y)))
+    
+print('That took {} seconds'.format(time.time() - starttime))
+```
+This example took about **20.019609451293945** seconds.
+
+The traditional for-loop iteration goes through the list one by one and performs the functions on each item individually. In this model, the loops use only 30 to 40 percent of the available CPU power. If we were to use multiprocessing, the function would be executed on multiple list items at once and up to 100 percent of the CPU could be used on a multicore machine. Best of all, we would see a dramatic reduction in execution time.
+
+# How to use multiprocessing: The Process class and the Pool class
+The multiprocessing Python module contains _two classes_ capable of handling tasks. The Process class sends each task to a different processor, and the Pool class sends sets of tasks to different processors. We will show how to multiprocess the example code using both classes. Although both classes provide a similar speed increase, the Process class is more efficient in this case because there are not many processes to execute.
+
+**Pool is most useful for large amounts of processes where each process can execute quickly, while Process is most useful for a small number of processes where each process would take a longer time to execute.**
+
 _For reference see: https://medium.com/@urban_institute/using-multiprocessing-to-make-python-code-faster-23ea5ef996ba_
