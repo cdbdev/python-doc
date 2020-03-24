@@ -193,4 +193,4 @@ If you have a GUI:
 If your code is CPU bound:
 - You should use multiprocessing (if your machine has multiple cores)
 
-_For reference see: https://medium.com/@urban_institute/using-multiprocessing-to-make-python-code-faster-23ea5ef996ba_
+_Reference: https://medium.com/@urban_institute/using-multiprocessing-to-make-python-code-faster-23ea5ef996ba_
