@@ -5,4 +5,11 @@ In Python, single-CPU use is caused by the **global interpreter lock (GIL)**, wh
 
 ![](python_GIL.jpeg)
 
+# Multiprocessing can dramatically improve processing speed
+Bypassing the GIL when executing Python code allows the code to run faster because we can now take advantage of multiprocessing. Python’s built-in multiprocessing module allows us to designate certain sections of code to bypass the GIL and send the code to multiple processors for simultaneous execution.
+
+![](python_GIL_bypass.jpeg)
+
+In this simplified example, assuming all three threads had identical runtimes, the multiprocessing solution would cut total execution time by a third. But this reduction isn’t exactly proportionate to the number of processors available because of the overhead involved in creating multiprocessing processes, but the gains represent a significant improvement over single-core operations.
+
 _For reference see: https://medium.com/@urban_institute/using-multiprocessing-to-make-python-code-faster-23ea5ef996ba_
