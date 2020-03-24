@@ -111,6 +111,7 @@ if __name__ == '__main__':
 ```
 This example took about **4.165083408355713** seconds.
 
+## The verdict
 Unless you are running a machine with more than 10 processors, the Process code should run faster than the Pool code. Process sends code to a processor as soon as the process is started. Pool sends a code to each available processor and doesn’t send any more until a processor has finished computing the first section of code. Pool does this so that processes don’t have to compete for computing resources, but this makes it slower than Process in cases where each process is lengthy. For an example where Pool is faster than Process, remove the line `time.sleep(2)` in `multiprocessing_func` in both the Process and Pool codes.
 
 The multiprocessed code doesn’t execute in the same order as serial execution. There’s no guarantee that the first process to be created will be the first to start or complete. As a result, multiprocessed code usually executes in a different order each time it is run, even if each result is always the same.
