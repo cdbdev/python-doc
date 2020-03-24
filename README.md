@@ -9,6 +9,7 @@ This repository contains collected documentation regarding the Python programmin
 [5. Python Testing](python_testing.md)  
 [6. Namespace packages](python_package_init_file.md)  
 [7. Virtual environments](venv.md)  
+[8. Multiprocessing](multiprocessing.md)  
 
 # Links
 https://realpython.com/  
