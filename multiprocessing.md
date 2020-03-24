@@ -129,4 +129,14 @@ Because of the way CPython implementation of Python works, threading may not spe
 
 If you are running a standard Python implementation, writing in only Python, and have a CPU-bound problem, you should check out the multiprocessing module instead.
 
+## What Should You Use?
+If your code has a lot of I/O or Network usage:
+- Multithreading is your best bet because of its low overhead
+
+If you have a GUI:
+- Multithreading so your UI thread doesn't get locked up
+
+If your code is CPU bound:
+- You should use multiprocessing (if your machine has multiple cores)
+
 _For reference see: https://medium.com/@urban_institute/using-multiprocessing-to-make-python-code-faster-23ea5ef996ba_
