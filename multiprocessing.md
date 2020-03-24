@@ -119,7 +119,7 @@ The multiprocessed code doesn’t execute in the same order as serial execution.
 With multiprocessing, using higher-level programming languages doesn’t necessarily mean sacrificing speed. Certain aspects of the code can be run in parallel, which allows us to do our work faster and more efficiently. Thanks to multiprocessing, we cut down runtime of cloud-computing system code from more than 40 hours to as little as 6 hours. In another project, we cut down runtime from 500 hours to just 4 on a 128-core machine.
 
 # What about 'threads'
-A thread is a separate flow of execution. This means that your program will have two things happening at once. But for most Python 3 implementations the different threads do not actually execute at the same time: they merely appear to.
+A thread (threading module) is a separate flow of execution. This means that your program will have two things happening at once. But for most Python 3 implementations the different threads do not actually execute at the same time: they merely appear to.
 
 It’s tempting to think of threading as having two (or more) different processors running on your program, each one doing an independent task at the same time. That’s almost right. The threads may be running on different processors, but they will only be running one at a time.
 
@@ -127,7 +127,42 @@ Getting multiple tasks running simultaneously requires a non-standard implementa
 
 Because of the way CPython implementation of Python works, threading may not speed up all tasks. This is due to interactions with the GIL that essentially limit one Python thread to run at a time.
 
-If you are running a standard Python implementation, writing in only Python, and have a CPU-bound problem, you should check out the multiprocessing module instead.
+## Example
+```python
+import threading
+import time
+
+exitFlag = 0
+
+class myThread (threading.Thread):
+   def __init__(self, threadID, name, counter):
+      threading.Thread.__init__(self)
+      self.threadID = threadID
+      self.name = name
+      self.counter = counter
+   def run(self):
+      print "Starting " + self.name
+      print_time(self.name, 5, self.counter)
+      print "Exiting " + self.name
+
+def print_time(threadName, counter, delay):
+   while counter:
+      if exitFlag:
+         threadName.exit()
+      time.sleep(delay)
+      print "%s: %s" % (threadName, time.ctime(time.time()))
+      counter -= 1
+
+# Create new threads
+thread1 = myThread(1, "Thread-1", 1)
+thread2 = myThread(2, "Thread-2", 2)
+
+# Start new Threads
+thread1.start()
+thread2.start()
+
+print "Exiting Main Thread"
+```
 
 ## What Should You Use?
 If your code has a lot of I/O or Network usage:
