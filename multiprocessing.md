@@ -80,5 +80,41 @@ if __name__ == '__main__':
         
     print('That took {} seconds'.format(time.time() - starttime))
 ```
+This example took about **2.226956844329834** seconds.
+
+To use the Pool class, we also have to create a separate function that takes a list item as an argument like we did when using Process. Then, using the multiprocessing module, create a Pool object called pool. This object has a function called map, which takes the function we want to multiprocess and the list as arguments and then iterates through the list for that function. After calling the function map, close the object to allow for a clean shutdown.
+
+```python
+import time
+import multiprocessing 
+
+def basic_func(x):
+    if x == 0:
+        return 'zero'
+    elif x%2 == 0:
+        return 'even'
+    else:
+        return 'odd'
+
+def multiprocessing_func(x):
+    y = x*x
+    time.sleep(2)
+    print('{} squared results in a/an {} number'.format(x, basic_func(y)))
+    
+if __name__ == '__main__':
+    
+    starttime = time.time()
+    pool = multiprocessing.Pool()
+    pool.map(multiprocessing_func, range(0,10))
+    pool.close()
+    print('That took {} seconds'.format(time.time() - starttime))
+```
+This example took about **4.165083408355713** seconds.
+
+Unless you are running a machine with more than 10 processors, the Process code should run faster than the Pool code. Process sends code to a processor as soon as the process is started. Pool sends a code to each available processor and doesn’t send any more until a processor has finished computing the first section of code. Pool does this so that processes don’t have to compete for computing resources, but this makes it slower than Process in cases where each process is lengthy. For an example where Pool is faster than Process, remove the line `time.sleep(2)` in `multiprocessing_func` in both the Process and Pool codes.
+
+The multiprocessed code doesn’t execute in the same order as serial execution. There’s no guarantee that the first process to be created will be the first to start or complete. As a result, multiprocessed code usually executes in a different order each time it is run, even if each result is always the same.
+
+With multiprocessing, using higher-level programming languages doesn’t necessarily mean sacrificing speed. Certain aspects of the code can be run in parallel, which allows us to do our work faster and more efficiently. Thanks to multiprocessing, we cut down runtime of cloud-computing system code from more than 40 hours to as little as 6 hours. In another project, we cut down runtime from 500 hours to just 4 on a 128-core machine.
 
 _For reference see: https://medium.com/@urban_institute/using-multiprocessing-to-make-python-code-faster-23ea5ef996ba_
