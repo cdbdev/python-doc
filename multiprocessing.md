@@ -118,6 +118,8 @@ The multiprocessed code doesn’t execute in the same order as serial execution.
 
 With multiprocessing, using higher-level programming languages doesn’t necessarily mean sacrificing speed. Certain aspects of the code can be run in parallel, which allows us to do our work faster and more efficiently. Thanks to multiprocessing, we cut down runtime of cloud-computing system code from more than 40 hours to as little as 6 hours. In another project, we cut down runtime from 500 hours to just 4 on a 128-core machine.
 
+_Reference: https://medium.com/@urban_institute/using-multiprocessing-to-make-python-code-faster-23ea5ef996ba_
+
 # What about 'threads'
 A thread (threading module) is a separate flow of execution. This means that your program will have two things happening at once. But for most Python 3 implementations the different threads do not actually execute at the same time: they merely appear to.
 
@@ -192,5 +194,3 @@ If you have a GUI:
 
 If your code is CPU bound:
 - You should use multiprocessing (if your machine has multiple cores)
-
-_Reference: https://medium.com/@urban_institute/using-multiprocessing-to-make-python-code-faster-23ea5ef996ba_
