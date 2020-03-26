@@ -9,7 +9,7 @@ There are several situations where creating Python bindings to call a C library 
 
 # Exploring the possible tools/methods
 ## ctypes
-
+There are times when all you need to do is invoke some system calls or a few C library functions and you want to avoid the overhead of writing two different languages. In this case you can use a Python library like `ctypes`.
 
 ## CFFI
 
