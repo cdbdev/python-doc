@@ -49,8 +49,8 @@ The approach Cython takes to creating Python bindings uses a Python-like languag
 This makes Cython the ideal language for wrapping external C libraries, and for fast C modules that speed up the execution of Python code.
 
 Cython code must, unlike Python, be compiled. This happens in two stages:
-- A .pyx file is compiled by Cython to a .c file, containing the code of a Python extension module
-- The .c file is compiled by a C compiler to a .so file (or .pyd on Windows) which can be import-ed directly into a Python session. setuptools takes care of this part. Although Cython can call them for you in certain cases
+- A `.pyx` file is compiled by Cython to a `.c` file, containing the code of a Python extension module
+- The `.c` file is compiled by a C compiler to a `.so` file (or `.pyd` on Windows) which can be `imported` directly into a Python session. setuptools takes care of this part. Although Cython can call them for you in certain cases
 
 ...
 
