@@ -42,7 +42,9 @@ CFFI also produces quite a different user experience. ctypes allows you to load 
 What’s more, with the **out-of-line-API** method you used above, the time penalty for creating the Python bindings is done once when you build it and doesn’t happen each time you run your code. For small programs, this might not be a big deal, but CFFI scales better to larger projects in this way, as well.
 
 ## Cython
-The fundamental nature of Cython can be summed up as follows: Cython is Python with C data types. Python code can make calls directly into C modules. Those C modules can be either generic C libraries or libraries built specifically to work with Python. Cython generates the second kind of module: C libraries that talk to Python’s internals, and that can be bundled with existing Python code.
+The fundamental nature of Cython can be summed up as follows: Cython is Python with C data types. 
+
+Cython generates libraries built specifically to work with Python: C libraries that talk to Python’s internals, and that can be bundled with existing Python code.
 
 The approach Cython takes to creating Python bindings uses a Python-like language to define the bindings and then generates C code that can be compiled into the module. The Cython language is very close to the Python language, but Cython additionally supports calling C functions and declaring C types on variables and class attributes. This allows the compiler to generate very efficient C code from Cython code.
 
