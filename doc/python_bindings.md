@@ -54,7 +54,7 @@ Cython code must, unlike Python, be compiled. This happens in two stages:
 - A `.pyx` file is compiled by Cython to a `.c` file, containing the code of a Python extension module
 - The `.c` file is compiled by a C compiler to a `.so` file (or `.pyd` on Windows) which can be `imported` directly into a Python session. setuptools takes care of this part. Although Cython can call them for you in certain cases
 
-...
+There are several ways to build Cython code, but the normal and recommended way is to write a setuptools `setup.py`
 
 ### Pros and cons
 Cython is a relatively complex tool that can provide you **a deep level of control** when creating Python bindings for C. It provides a Python-esque method for writing code that manually controls the GIL, which can significantly speed up certain types of problems.
