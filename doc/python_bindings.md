@@ -22,7 +22,7 @@ CFFI is the **C Foreign Function Interface** for Python. It takes a more automat
   - **In-line mode** compiles the Python bindings every time your script runs. This is convenient, as you don’t need an extra build step. It does, however, slow down your program
   - **Out-of-line mode** requires an extra step to generate the Python bindings a single time and then uses them each time the program is run. This is much faster, but that may not matter for your application
 
-In most scenario's, API out-of-line mode produces the fastest code.
+In most scenario's, **API out-of-line mode** produces the fastest code.
 
 ## Cython
 
