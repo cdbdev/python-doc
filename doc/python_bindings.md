@@ -9,7 +9,11 @@ There are several situations where creating Python bindings to call a C library 
 
 # Exploring the possible tools/methods
 ## ctypes
+This is a tool in the standard library for creating Python bindings. It provides a low-level toolset for loading shared libraries and marshalling data between Python and C.
+
 There are times when all you need to do is invoke some system calls or a few C library functions and you want to avoid the overhead of writing two different languages. In this case you can use a Python library like `ctypes`.
+
+The biggest advantage ctypes has over the other tools you’ll examine here is that it’s built into the standard library. It also requires no extra steps, as all of the work is done as part of your Python program. However, more complex tasks grow cumbersome with the lack of automation. In the next section, you’ll see a tool that adds some automation to the process.
 
 ## CFFI
 
