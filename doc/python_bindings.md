@@ -48,7 +48,7 @@ Cython generates libraries built specifically to work with Python: C libraries t
 
 The approach Cython takes to creating Python bindings uses a Python-like language to define the bindings and then generates C code that can be compiled into the module. The Cython language is very close to the Python language, but Cython additionally supports calling C functions and declaring C types on variables and class attributes. This allows the compiler to generate very efficient C code from Cython code.
 
-The main performance gain Cython can reach in contrast to pure Python stems from bypassing the CPython API. For example when adding two integers, Python performs a type check for each variable, finds an add function that satisfies the found types, and calls that function. In the Cython-generated C code, the types are already know and only one function call to is made. Hence, Cython especially shines for mathematic problems in which the types are clear.
+The main performance gain Cython can reach in contrast to pure Python stems from bypassing the CPython API. For example when adding two integers, Python performs a type check for each variable, finds an add function that satisfies the found types, and calls that function. In the Cython-generated C code, the types are already known and only one function call has to be made. Hence, Cython especially shines for mathematic problems in which the types are clear.
 
 Cython code must, unlike Python, be compiled. This happens in two stages:
 - A `.pyx` file is compiled by Cython to a `.c` file, containing the code of a Python extension module
