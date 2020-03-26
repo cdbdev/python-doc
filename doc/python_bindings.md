@@ -7,3 +7,14 @@ There are several situations where creating Python bindings to call a C library 
 - You want to speed up a particular section of your Python code
 - You want to use Python test tools
 
+# Exploring the possible tools
+## ctypes
+
+
+## CFFI
+
+
+## Cython
+
+
+## C extension module
