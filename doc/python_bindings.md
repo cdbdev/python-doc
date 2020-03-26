@@ -17,9 +17,12 @@ The biggest advantage ctypes has over the other tools you’ll examine here is t
 
 ## CFFI
 CFFI is the **C Foreign Function Interface** for Python. It takes a more automated approach to generate Python bindings. CFFI has multiple ways in which you can build and use your Python bindings. There are two different options to select from, which gives you four possible modes:
-- ABI vs API: API mode uses a C compiler to generate a full Python module, whereas ABI mode loads the shared library and interacts with it directly. Without running the compiler, getting the structures and parameters correct is error-prone. The documentation heavily recommends using the API mode
-- in-line vs out-of-line: The difference between these two modes is a trade-off between speed and convenience:
-  - tse
+- **ABI vs API**: API mode uses a C compiler to generate a full Python module, whereas ABI mode loads the shared library and interacts with it directly. Without running the compiler, getting the structures and parameters correct is error-prone. The documentation heavily recommends using the API mode
+- **in-line vs out-of-line**: The difference between these two modes is a trade-off between speed and convenience:
+  - **In-line mode** compiles the Python bindings every time your script runs. This is convenient, as you don’t need an extra build step. It does, however, slow down your program
+  - **Out-of-line mode** requires an extra step to generate the Python bindings a single time and then uses them each time the program is run. This is much faster, but that may not matter for your application
+
+In most scenario's, API out-of-line mode produces the fastest code.
 
 ## Cython
 
