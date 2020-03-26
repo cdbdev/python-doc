@@ -64,3 +64,4 @@ Cython is a relatively complex tool that can provide you **a deep level of contr
 That Python-esque language is not quite Python, however, so there’s a slight learning curve when you’re coming up to speed in figuring out which parts of C and Python fit where.
 
 ## C extension module
+https://realpython.com/build-python-c-extension-module/
