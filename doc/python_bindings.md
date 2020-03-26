@@ -35,11 +35,11 @@ Basic steps to use CFFI Python bindings:
 That might seem like a lot of work, but you’ll walk through each of these steps and see how it works.
 
 ### Pros and cons
-It might seem that ctypes requires less work than the CFFI example you just saw. While this is true for this use case, CFFI scales to larger projects much better than ctypes due to automation of much of the function wrapping.
+It might seem that ctypes requires less work than the CFFI example you just saw. While this is true for this use case, CFFI scales to larger projects much better than ctypes due to **automation** of much of the function wrapping.
 
 CFFI also produces quite a different user experience. ctypes allows you to load a pre-existing C library directly into your Python program. CFFI, on the other hand, creates a new Python module that can be loaded like other Python modules.
 
-What’s more, with the out-of-line-API method you used above, the time penalty for creating the Python bindings is done once when you build it and doesn’t happen each time you run your code. For small programs, this might not be a big deal, but CFFI scales better to larger projects in this way, as well.
+What’s more, with the **out-of-line-API** method you used above, the time penalty for creating the Python bindings is done once when you build it and doesn’t happen each time you run your code. For small programs, this might not be a big deal, but CFFI scales better to larger projects in this way, as well.
 
 ## Cython
 
