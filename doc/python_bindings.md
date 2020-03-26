@@ -44,4 +44,11 @@ What’s more, with the **out-of-line-API** method you used above, the time pena
 ## Cython
 The approach Cython takes to creating Python bindings uses a Python-like language to define the bindings and then generates C code that can be compiled into the module.
 
+...
+
+### Pros and cons
+Cython is a relatively complex tool that can provide you **a deep level of control** when creating Python bindings for C. It provides a Python-esque method for writing code that manually controls the GIL, which can significantly speed up certain types of problems.
+
+That Python-esque language is not quite Python, however, so there’s a slight learning curve when you’re coming up to speed in figuring out which parts of C and Python fit where.
+
 ## C extension module
