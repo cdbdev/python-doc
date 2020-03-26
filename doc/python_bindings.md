@@ -24,6 +24,14 @@ CFFI is the **C Foreign Function Interface** for Python. It takes a more automat
 
 In most scenario's, **API out-of-line mode** produces the fastest code.
 
+Unlike _ctypes_, with _CFFI_ you’re creating a full Python module. You’ll be able to import the module like any other module in the standard library. There is some extra work you’ll have to do to build your Python module. 
+
+Basic steps to use CFFI Python bindings:
+- **Write** some Python code describing the bindings
+- **Run** that code to generate a loadable module
+- **Modify** the calling code to import and use your newly created module
+
+That might seem like a lot of work, but you’ll walk through each of these steps and see how it works.
 ## Cython
 
 
