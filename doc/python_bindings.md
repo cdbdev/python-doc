@@ -1,5 +1,5 @@
 # Calling a C library
-Are you a Python developer with a C library you’d like to use from Python? If so, then Python bindings allow you to call functions and pass data from Python to C, letting you take advantage of the strengths of both languages.
+Python bindings allow you to call functions and pass data from Python to C, letting you take advantage of the strengths of both languages.
 
 # Why call C from Python
 There are several situations where creating Python bindings to call a C library is a great idea:
@@ -7,7 +7,7 @@ There are several situations where creating Python bindings to call a C library 
 - You want to speed up a particular section of your Python code
 - You want to use Python test tools
 
-# Exploring the possible tools
+# Exploring the possible tools/methods
 ## ctypes
 
 
