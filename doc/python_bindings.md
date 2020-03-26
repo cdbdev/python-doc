@@ -42,6 +42,6 @@ CFFI also produces quite a different user experience. ctypes allows you to load 
 What’s more, with the **out-of-line-API** method you used above, the time penalty for creating the Python bindings is done once when you build it and doesn’t happen each time you run your code. For small programs, this might not be a big deal, but CFFI scales better to larger projects in this way, as well.
 
 ## Cython
-
+The approach Cython takes to creating Python bindings uses a Python-like language to define the bindings and then generates C code that can be compiled into the module.
 
 ## C extension module
