@@ -13,6 +13,7 @@ This is a tool in the standard library for creating Python bindings. It provides
 
 There are times when all you need to do is invoke some system calls or a few C library functions and you want to avoid the overhead of writing two different languages. In this case you can use a Python library like `ctypes`.
 
+### Pros and cons
 The biggest advantage ctypes has over the other tools you’ll examine here is that it’s built into the standard library. It also requires no extra steps, as all of the work is done as part of your Python program. However, more complex tasks grow cumbersome with the lack of automation. In the next section, you’ll see a tool that adds some automation to the process.
 
 ## CFFI
@@ -33,7 +34,7 @@ Basic steps to use CFFI Python bindings:
 
 That might seem like a lot of work, but you’ll walk through each of these steps and see how it works.
 
-### Strengths
+### Pros and cons
 It might seem that ctypes requires less work than the CFFI example you just saw. While this is true for this use case, CFFI scales to larger projects much better than ctypes due to automation of much of the function wrapping.
 
 CFFI also produces quite a different user experience. ctypes allows you to load a pre-existing C library directly into your Python program. CFFI, on the other hand, creates a new Python module that can be loaded like other Python modules.
