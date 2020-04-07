@@ -16,3 +16,10 @@ The name: `str` syntax indicates the name argument should be of type str. The `-
 # When to use
 As Guido and the mypy docs say:  
 > The aim of mypy is not to convince everybody to write statically typed Python – static typing is entirely optional, now and in the future. The goal is to give more options for Python programmers, to make Python a more competitive alternative to other statically typed languages in **large projects**, to improve programmer productivity, and to improve software quality.
+
+Because of the overhead of setting up mypy and thinking through the types that you need, type hints don’t make sense for smaller codebases. What’s a small codebase? Probably anything under 1k LOC, conservatively speaking. 
+
+For larger codebases, places where you’re working with others, collaborating, and packages, places where you have version control and continuous integration system, it makes sense and could save a lot of time.
+
+# References
+http://veekaybee.github.io/2019/07/08/python-type-hints/
