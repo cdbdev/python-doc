@@ -11,6 +11,7 @@ This repository contains collected documentation regarding the Python programmin
 [7. Virtual environments](doc/venv.md)  
 [8. Multiprocessing](doc/multiprocessing.md)  
 [9. Calling C from Python](doc/python_bindings.md)  
+[10. Python type hints](doc/python_hints.md)  
 
 # Links
 https://realpython.com/  
