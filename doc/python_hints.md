@@ -13,6 +13,11 @@ The name: `str` syntax indicates the name argument should be of type str. The `-
 
 ...TODO
 
+
+# mypy
+With the development of PEP 484 is that it was developed in conjunction with `mypy`, a project out of DropBox, which checks the types as you run the program. Remember that types are not checked at run-time. You’ll only get an issue if you try to run a method on a type that’s incompatible.
+
+
 # When to use
 As Guido and the mypy docs say:  
 > The aim of mypy is not to convince everybody to write statically typed Python – static typing is entirely optional, now and in the future. The goal is to give more options for Python programmers, to make Python a more competitive alternative to other statically typed languages in **large projects**, to improve programmer productivity, and to improve software quality.
