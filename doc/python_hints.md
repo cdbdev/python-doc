@@ -15,4 +15,4 @@ The name: `str` syntax indicates the name argument should be of type str. The `-
 
 # When to use
 As Guido and the mypy docs say:  
-> The aim of mypy is not to convince everybody to write statically typed Python – static typing is entirely optional, now and in the future. The goal is to give more options for Python programmers, to make Python a more competitive alternative to other statically typed languages in large projects, to improve programmer productivity, and to improve software quality.
+> The aim of mypy is not to convince everybody to write statically typed Python – static typing is entirely optional, now and in the future. The goal is to give more options for Python programmers, to make Python a more competitive alternative to other statically typed languages in `large projects`, to improve programmer productivity, and to improve software quality.
