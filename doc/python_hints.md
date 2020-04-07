@@ -14,8 +14,8 @@ The name: `str` syntax indicates the name argument should be of type str. The `-
 ...TODO
 
 
-# mypy
-With the development of PEP 484 is that it was developed in conjunction with `mypy`, a project out of DropBox, which checks the types as you run the program. Remember that types are not checked at run-time. You’ll only get an issue if you try to run a method on a type that’s incompatible.
+# mypy: Optional static typing for Python
+Mypy is an optional static type checker for Python that aims to combine the benefits of dynamic (or "duck") typing and static typing. Mypy combines the expressive power and convenience of Python with a powerful type system and compile-time type checking. Mypy type checks standard Python programs; run them using any Python VM with basically no runtime overhead.
 
 
 # When to use
