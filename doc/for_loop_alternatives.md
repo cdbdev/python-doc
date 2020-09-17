@@ -1,14 +1,6 @@
 # 1. You (Probably) Don't need For-Loops
-The for statement is most commonly used. It loops over the elements of a sequence, assigning each to the loop variable.
-A simple example:
-```python
-for ...:
-    if ...:
-        try:
-        except:
-    else:
-```
-As you can see, 
+The for statement is most commonly used. It loops over the elements of a sequence, assigning each to the loop variable.  
+Looping over Python arrays, lists, or dictionaries, can be slow. Fortunately, there are already great tools that are built into Python to help you accomplish speeding up your code! 
 
 
 
