@@ -3,7 +3,9 @@ The for statement is most commonly used. It loops over the elements of a sequenc
 Looping over Python large datasets like arrays, lists, or dictionaries, can be slow. Fortunately, there are already great tools that are built into Python to speed up your code! 
 
 ## 1.2 So what makes a loop in Python any slower than it would be in native machine code?
-Python is a very high level and dynamic language. It’s variables are references to objects and any reference might be repeatedly changed to objects of entirely different types (classes) throughout the execution of any loop. These changes might occur as side effects of any function or method called within any iteration of any loop … including indirectly… through arbitrary levels of nesting.
+It’s often necessary to work with very large datasets. Those large datasets get read directly into memory, and are stored and processed as Python arrays, lists, or dictionaries.
+
+Working with such huge arrays can be time consuming; really that’s just the nature of the problem. You have thousands, millions, or even billions of data points. Every microsecond added to the processing of a single one of those points can drastically slow you down as a result of the large scale of the data you’re working with.
 
 
 
