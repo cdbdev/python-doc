@@ -2,8 +2,8 @@
 A simple example:
 ```python
 for ...:
-        if ...:
-            try:
-            except:
-        else:
+    if ...:
+        try:
+        except:
+    else:
 ```
