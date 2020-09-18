@@ -1,9 +1,8 @@
 # 1. The 'problem'
 For-loops have their use, but they also have several disadvantages:
 
-- indentation (especially with nested loops)
-- readability
-- a lot of code to read
+- multiple levels of indentation (especially with nested loops)
+- code readability suffers in large blocks
 - slower
 
 ## 1.2 So what makes a loop in Python any slower than it would be in native machine code?
