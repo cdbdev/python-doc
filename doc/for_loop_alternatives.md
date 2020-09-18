@@ -1,5 +1,10 @@
-# 1. The problem
-Looping over Python large datasets like arrays, lists, or dictionaries, can be slow. Fortunately, there are already great tools that are built into Python to speed up your code! 
+# 1. The 'problem'
+For-loops have their use, but they also have several disadvantages:
+
+- indentation (especially with nested loops)
+- readability
+- a lot of code to read
+- slower
 
 ## 1.2 So what makes a loop in Python any slower than it would be in native machine code?
 It’s often necessary to work with very large datasets. Those large datasets get read directly into memory, and are stored and processed as Python arrays, lists, or dictionaries.
