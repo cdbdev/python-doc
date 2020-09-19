@@ -1,5 +1,5 @@
-# 1. The 'problem'
-For-loops have their use, but they also have several disadvantages:
+# 1. The "problem"
+Loops have their use, but they also have several disadvantages:
 
 - multiple levels of indentation (especially with nested loops)
 - code readability suffers in large blocks
