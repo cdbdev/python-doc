@@ -26,6 +26,8 @@ Rather than creating an empty list and adding each element to the end, you simpl
 
 List Comprehension is also often described as being more _Pythonic_ than loops because you can use them in many different situations. List Comprehension can, in addition to standard list creation, also be used for mapping and filtering. You don't have to use a different approach for each scenario. 
 
+> Note: List Comprehension is just a _syntactic sugar_ around a regular loop and you use it to avoid extra function calls like appending to lists, etc.
+
 # 3. Map
 `map()` provides a third way of making lists. It's based on **functional progamming**. You pass in a **function** and an **interable**, and `map()` will create an object.
 
