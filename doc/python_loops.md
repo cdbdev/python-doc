@@ -32,11 +32,11 @@ List Comprehension is also often described as being more _Pythonic_ than loops b
 ```python
 def square(item):
     return item*item
-squares = map(square,range(10))
+square_iterator = map(square,range(10))
 ```
-> Note that the `squares` object is not a list, but an iterator to map. In order to get a list, we have to convert it:
+It is important to note that the `squares` object is not a list, but it contains a **map** object which is actually an iterator. In order to get a list, we have to convert it:
 ```python
-squares_list = list(squares)
+list(square_iterator)
 ```
 
 ...
