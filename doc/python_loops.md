@@ -35,7 +35,7 @@ When a normal function with a return statement is called, it terminates whenever
 
 The Generator Expression allows us to create a generator without the yield keyword.
 
-Syntax Difference: Parenthesis are used in place of square brackets.
+**Syntax Difference:** Parenthesis are used in place of square brackets.
 ```python
 generator_expression  = (i*i for i in range(10))
 ```
