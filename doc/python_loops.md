@@ -1,4 +1,4 @@
-# 1. Introduction
+# 1. For-loop
 Python provides a few different ways to create **lists**. The most common way to do this is through the **for loop**. 
 
 Example:
@@ -28,8 +28,11 @@ List Comprehension is also often described as being more _Pythonic_ than loops b
 
 > Note: List Comprehension is just a _syntactic sugar_ around a regular loop and you use it to avoid extra function calls like appending to lists, etc.
 
-# 3. Map
-`map()` provides a third way of making lists. It's based on **functional progamming**. You pass in a **function** and an **interable**, and `map()` will create an object.
+# 3. Functions (map, reduce, ...)
+Functions provide a third way of making lists. It's based on **functional progamming**. 
+
+## 3.1 map()
+With `map()` you pass in a **function** and an **interable**, and `map()` will create an object.
 
 ```python
 def square(item):
