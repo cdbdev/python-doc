@@ -50,6 +50,10 @@ is faster than:
 map(lambda x, y: x+y, range(10), range(10))
 ```
 
+# 4. So which one to choose
+Whenever you have to choose a list creation method, try multiple implementations and consider what's easiest to read and understand in your specific scenario. 
+
+If performance is important, then you can use profiling tools to give you actionable data instead of relying on hunches of guesses about what works best.
 
 
 ## Appendix A: So what makes a for-loop in Python any slower than it would be in native machine code?
