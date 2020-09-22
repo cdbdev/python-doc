@@ -41,11 +41,11 @@ list(square_iterator)
 Another important remark with map is that **builtin** functions run faster than **hand-built** equivalents. For example:
 ```python
 import operator
-map(operator.add, v1, v2)
+map(operator.add, range(10), range(10))
 ```
 is faster than:
 ```python
-map(lambda x, y: x+y, v1, v2)
+map(lambda x, y: x+y, range(10), range(10))
 ```
 
 
