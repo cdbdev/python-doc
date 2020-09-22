@@ -51,7 +51,7 @@ map(lambda x, y: x+y, range(10), range(10))
 
 
 ## Appendix A: So what makes a for-loop in Python any slower than it would be in native machine code?
-A python for-loop is actually a for-each loop and for one cannot be compared with the **Three-Expression Loop** of C.
+A python for-loop is actually a for-each loop and for one cannot be compared with the **Three-Expression Loop** of C. Python only implements the **collection-based iteration**.
 
 It’s often necessary to work with **very large datasets**. Those large datasets get read directly into memory, and are stored and processed as Python arrays, lists, or dictionaries.
 
