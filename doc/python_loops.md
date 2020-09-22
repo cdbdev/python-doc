@@ -17,7 +17,12 @@ These loops have their use, but they also have some disadvantages:
 In case you encounter one or more of the above issues, there are several alternatives.
 
 # 2. List Comprehension
-List comprehension provides an alternative approach of making lists. ...
+List comprehension provides an alternative approach of making lists. They are also often described as being more _Pythonic_ than loops because you can use them in many different situations. List Comprehension can, in addition to standard list creation, also be used for mapping and filtering. You don't have to use a different approach for each scenario. Besides this, you can rewrite the loop from the first example in just a single line of code:
+```python
+squares = [i*i for i in range(10)]
+```
+
+...
 
 ## Appendix A: So what makes a loop in Python any slower than it would be in native machine code?
 It’s often necessary to work with **very large datasets**. Those large datasets get read directly into memory, and are stored and processed as Python arrays, lists, or dictionaries.
