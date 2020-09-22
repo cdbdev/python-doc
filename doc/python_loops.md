@@ -1,11 +1,20 @@
 # 1. Introduction
-Python provides a few different ways to create **lists**. The most common type to do this is the **for loop**. These loops have their use, but they also have some disadvantages:
+Python provides a few different ways to create **lists**. The most common way to do this is through the **for loop**. 
+
+Example:
+```python
+squares = []
+for i in range(10):
+    squares.append(i)
+```
+
+These loops have their use, but they also have some disadvantages:
 
 - multiple levels of indentation (especially with nested loops)
 - code readability suffers in large blocks
 - can be slow
 
-In case you encounter one of the above issues, there are several alternatives.
+In case you encounter one or more of the above issues, there are several alternatives.
 
 # 2. List Comprehension
 List comprehension provides an alternative approach of making lists. ...
