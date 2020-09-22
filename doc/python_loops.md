@@ -40,6 +40,7 @@ list(square_iterator)
 ```
 Another important remark with map is that **builtin** functions run faster than **hand-built** equivalents. For example:
 ```python
+import operator
 map(operator.add, v1, v2)
 ```
 is faster than:
