@@ -17,9 +17,26 @@ These loops have their use, but they also have some disadvantages:
 In case you encounter one or more of the above issues, there are several alternatives.
 
 # 2. List Comprehension
-List comprehension provides an alternative approach of making lists. They are also often described as being more _Pythonic_ than loops because you can use them in many different situations. List Comprehension can, in addition to standard list creation, also be used for mapping and filtering. You don't have to use a different approach for each scenario. Besides this, you can rewrite the loop from the first example in just a single line of code:
+List comprehension provides an alternative approach of making lists. They are easier to read and understand.
+You can rewrite the loop from the first example in just a single line of code:
 ```python
 squares = [i*i for i in range(10)]
+```
+Rather than creating an empty list and adding each element to the end, you simply define the list and its content at the same time.
+
+List Comprehension is also often described as being more _Pythonic_ than loops because you can use them in many different situations. List Comprehension can, in addition to standard list creation, also be used for mapping and filtering. You don't have to use a different approach for each scenario. 
+
+# 3. Map
+`map()` provides a third way of making lists. It's based on **functional progamming**. You pass in a **function** and an **interable**, and `map()` will create an object.
+
+```python
+def square(item):
+    return item*item
+squares = map(square,range(10))
+```
+> Note that the `squares` object is not a list, but an iterator to map. In order to get a list, we have to convert it:
+```python
+squares_list = list(squares)
 ```
 
 ...
@@ -28,8 +45,3 @@ squares = [i*i for i in range(10)]
 It’s often necessary to work with **very large datasets**. Those large datasets get read directly into memory, and are stored and processed as Python arrays, lists, or dictionaries.
 
 Working with such huge arrays can be time consuming; really that’s just the nature of the problem. You have thousands, millions, or even billions of data points. Every microsecond added to the processing of a single one of those points can drastically slow you down as a result of the large scale of the data you’re working with.
-
-
-
-MAPS:
-You can think of map as a for moved into C code. The only restriction is that the "loop body" of map must be a function call. 
