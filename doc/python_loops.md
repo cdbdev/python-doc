@@ -5,7 +5,7 @@ Example:
 ```python
 squares = []
 for i in range(10):
-    squares.append(i)
+    squares.append(i*i)
 ```
 
 These loops have their use, but they also have some disadvantages:
