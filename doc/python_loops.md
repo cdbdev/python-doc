@@ -28,10 +28,13 @@ List Comprehension is also often described as being more _Pythonic_ than loops b
 
 > Note: List Comprehension is just a _syntactic sugar_ around a regular loop and you use it to avoid extra function calls like appending to lists, etc.
 
-# 3. Functions (map, reduce, ...)
+# 3. Generators
+TODO
+
+# 4. Functions (map, reduce, ...)
 Functions provide a third way of making lists. It's based on **functional progamming**. 
 
-## 3.1 map()
+## 4.1 map()
 With `map()` you pass in a **function** and an **interable**, and `map()` will create an object.
 
 ```python
@@ -53,7 +56,7 @@ is faster than:
 map(lambda x, y: x+y, range(10), range(10))
 ```
 
-# 4. So which one to choose
+# 5. So which one to choose
 Whenever you have to choose a list creation method, try multiple implementations and consider what's easiest to read and understand in your specific scenario. 
 
 If performance is important, then you can use profiling tools to give you actionable data instead of relying on hunches of guesses about what works best.
