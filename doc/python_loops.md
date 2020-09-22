@@ -34,12 +34,20 @@ def square(item):
     return item*item
 square_iterator = map(square,range(10))
 ```
-It is important to note that the `squares` object is not a list, but it contains a **map** object which is actually an iterator. In order to get a list, we have to convert it:
+It is important to note that the `square_iterator` object is not a list, but returns a map object(which is an iterator) of the results. In order to get a list, we have to convert it:
 ```python
 list(square_iterator)
 ```
+Another important remark with map is that **builtin** functions run faster than **hand-built** equivalents. For example:
+```python
+map(operator.add, v1, v2)
+```
+is faster than:
+```python
+map(lambda x, y: x+y, v1, v2)
+```
 
-...
+
 
 ## Appendix A: So what makes a loop in Python any slower than it would be in native machine code?
 It’s often necessary to work with **very large datasets**. Those large datasets get read directly into memory, and are stored and processed as Python arrays, lists, or dictionaries.
