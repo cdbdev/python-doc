@@ -3,7 +3,7 @@ Loops have their use, but they also have several disadvantages:
 
 - multiple levels of indentation (especially with nested loops)
 - code readability suffers in large blocks
-- slower
+- can be slow
 
 ## 1.2 So what makes a loop in Python any slower than it would be in native machine code?
 It’s often necessary to work with very large datasets. Those large datasets get read directly into memory, and are stored and processed as Python arrays, lists, or dictionaries.
