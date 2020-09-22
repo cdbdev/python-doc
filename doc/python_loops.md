@@ -1,5 +1,5 @@
 # 1. Introduction
-The most common type of loop is the **for loop**. These loops have their use, but they also have some disadvantages:
+Python provides a few different ways to create **lists**. The most common type to do this is the **for loop**. These loops have their use, but they also have some disadvantages:
 
 - multiple levels of indentation (especially with nested loops)
 - code readability suffers in large blocks
