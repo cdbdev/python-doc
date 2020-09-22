@@ -29,7 +29,19 @@ List Comprehension is also often described as being more _Pythonic_ than loops b
 > Note: List Comprehension is just a _syntactic sugar_ around a regular loop and you use it to avoid extra function calls like appending to lists, etc.
 
 # 3. Generators
-TODO
+Generator Expressions are somewhat similar to list comprehensions, but the former doesn’t construct list object. Instead of creating a list and keeping the whole sequence in the memory, the generator generates the next element in demand.
+
+When a normal function with a return statement is called, it terminates whenever it gets a return statement. But a function with a **yield** statement saves the state of the function and can be picked up from the same state, next time the function is called.
+
+The Generator Expression allows us to create a generator without the yield keyword.
+
+Syntax Difference: Parenthesis are used in place of square brackets.
+```python
+generator_expression  = (i*i for i in range(10))
+```
+
+## 3.1 Difference between Generator Expressions and List Comprehensions?
+The generator yields one item at a time and generates item only when in demand. Whereas, in a list comprehension, Python reserves memory for the whole list. Thus we can say that the generator expressions are memory efficient than the lists.
 
 # 4. Functions (map, reduce, ...)
 Functions provide a third way of making lists. It's based on **functional progamming**. 
