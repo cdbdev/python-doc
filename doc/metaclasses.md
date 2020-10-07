@@ -85,8 +85,7 @@ Before understanding metaclasses, you need to master classes in Python. And Pyth
 In most languages, classes are just pieces of code that describe how to produce an object. That's kinda true in Python too:
 
 >>> class ObjectCreator(object):
-...       pass
-...
+      pass
 
 >>> my_object = ObjectCreator()
 >>> print(my_object)
@@ -98,8 +97,8 @@ Yes, objects.
 As soon as you use the keyword class, Python executes it and creates an OBJECT. The instruction
 
 >>> class ObjectCreator(object):
-...       pass
-...
+        pass
+
 creates in memory an object with the name "ObjectCreator".
 
 This object (the class) is itself capable of creating objects (the instances), and this is why it's a class.
