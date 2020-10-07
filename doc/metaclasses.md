@@ -169,4 +169,4 @@ Remember the function `type`? The good old function that lets you know what type
 <class '__main__.ObjectCreator'>
 ```
 
-see: [](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python)
+see: [Info](https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python)
