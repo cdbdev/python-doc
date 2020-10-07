@@ -13,6 +13,10 @@ This repository contains collected documentation regarding the Python programmin
 [9. Calling C from Python](doc/python_bindings.md)  
 [10. Python type hints](doc/python_hints.md)  
 [11. Python loops](doc/python_loops.md)  
+12. MetaClasses  
+13. Add functions to the list of built-in functions  
+14. Overload operators via magic methods  
+15. The @property decorator
 
 # Links
 https://realpython.com/  
