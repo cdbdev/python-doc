@@ -12,11 +12,12 @@ Lists are just like dynamic sized arrays, declared in other languages (vector in
 - can store any type of element
 
 Example:
+```python
 # Creating a List of numbers 
 list = [10, 20, 14] 
 print("\nList of numbers: ") 
 print(list) 
-
+```
 
 # Tuple
 
@@ -29,11 +30,12 @@ Tuple is a collection of Python objects much like a list. The sequence of values
 - operations have smaller size than that of list, which makes it a bit faster but not that much to mention about until you have a huge number of elements
 
 Example:
+```python
 # Creating a Tuple of numbers 
 tuple = (10, 20, 14)
 print("\nTuple of numbers: ") 
 print(List) 
-
+```
 
 # Set
 
@@ -44,9 +46,11 @@ Set is an unordered collection of data type that is iterable, mutable, and has n
 - mutable, however, only immutable objects can be stored in it (Numbers, strings, and tuples are immutable)
 
 Example:
+```python
 # set of mixed datatypes
 my_set = {1.0, "Hello", (1, 2, 3)}
 print(my_set)
+```
 
 
 # Different Use Cases
@@ -58,11 +62,15 @@ At first sight, it might seem that lists can always replace tuples. But tuples a
 2. Tuple can also be used as key in dictionary due to their hashable and immutable nature whereas Lists are not used as key in a dictionary because list can’t handle __hash__() and have mutable nature.
 
 For Example:
+```python
 key_val= {('alpha','bravo'):123} #Valid
 key_val = {['alpha','bravo']:123} #Invalid
+```
 
 3. Tuples are commonly used as the equivalent of a dictionary without keys to store data. For Example:
 
+```python
 [('Swordfish', 'Dominic Sena', 2001), ('Snowden', ' Oliver Stone', 2016), ('Taxi Driver', 'Martin Scorsese', 1976)]
+```
 
 Above example contains tuples inside list which has a list of movies.
