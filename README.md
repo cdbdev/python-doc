@@ -2,7 +2,7 @@
 This repository contains collected documentation regarding the Python programming language.
 
 # Overview
-[1. Composite datatypes](doc/composite_datatypes.md)
+[1. Composite datatypes](doc/composite_datatypes.md)  
 [2. Scripts vs Modules](doc/scripts_vs_modules.md)  
 [3. The Python interpreter](doc/python_interpreter.md)  
 [4. Modules and Packages](doc/modules_and_packages.md)  
