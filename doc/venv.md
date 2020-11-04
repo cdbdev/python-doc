@@ -35,10 +35,18 @@ Once activated, you use python and pip like normal, except they will point to yo
 - pip packages and things installed with setup.py will go in your virtual environment's site packages
 - Your PATH will be updated to include the Python virtual environment's script directory. Any executables installed through a package will be available in your shell path.
 
-Step 4: Deactivate/exit virtual environment
+Step 4: Deactivate/exit virtual environment  
 ```shell
 $ deactivate
 ```
+
+Step 5: Optionally keep requirements  
+```shell
+pip freeze > requirements.txt
+```
+
+You can later install the packages with: `pip install -f requirements.txt`.
+
 
 For more info, see: 
 
