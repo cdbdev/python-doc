@@ -57,3 +57,5 @@
 # 10. Constants
 - Constant names must be fully capitalized
 - Words in a constant name should be separated by an underscore
+
+More info on: https://www.python.org/dev/peps/pep-0008/#naming-conventions
