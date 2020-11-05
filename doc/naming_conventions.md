@@ -10,13 +10,13 @@
 # 2. Packages
 - Package names should be all lower case
 - When multiple words are needed, an underscore should separate them
-- It is usually preferable to stick to 1 word names
+- It is usually preferable to stick to 1 word names (most people seem to ignore this though)
 
 
 # 3. Modules
 - Module names should be all lower case
 - When multiple words are needed, an underscore should separate them
-- It is usually preferable to stick to 1 word names
+- It is usually preferable to stick to 1 word names (most people seem to ignore this though)
 
 
 # 4. Classes
