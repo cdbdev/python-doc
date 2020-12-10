@@ -43,7 +43,7 @@ $ deactivate
 Step 5: Optionally keep requirements  
 To make your repo reusable, make sure to create a record of everything that’s installed in your new environment, run:
 ```shell
-pip **freeze** > requirements.txt
+pip freeze > requirements.txt
 ```
 If you are creating a new virtual environment from a requirements.txt file, you can run:  `pip install -f requirements.txt`. If you open your requirements file you will see a different package with its version in each line.
 
