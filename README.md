@@ -11,7 +11,7 @@ This repository contains collected documentation regarding the Python programmin
 [6. Python Testing](doc/python_testing.md)  
 [7. Namespace packages](doc/python_package_init_file.md)  
 [8. Virtual environments](doc/venv.md)  
-[9. Multiprocessing](doc/multiprocessing.md)  
+[9. Multiprocessing or multithreading](doc/multiprocessing.md)  
 [10. Calling C from Python](doc/python_bindings.md)  
 [11. Python type hints](doc/python_hints.md)  
 [12. Python loops](doc/python_loops.md)  
