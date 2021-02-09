@@ -73,6 +73,14 @@ Simply put, **List comprehensions** are used for creating lists, **For loops** a
 
 Using a comprehension for its side effects, or a for-loop for creating a list, is generally frowned upon.
 
+Some developers advocate turning a comprehension into a loop once it becomes too long. That's not a good style: the append calls required for creating a list are still ugly. Instead, refactor into a function, f.e.:
+
+```
+def polynomial(x):
+    return x ** 4 + 7 * x ** 3 - 2 * x ** 2 + 3 * x - 4
+result = [polynomial(x) for x in some_list]
+```
+
 If performance is important, then you can use profiling tools to give you actionable data instead of relying on hunches of guesses about what works best.
 
 
