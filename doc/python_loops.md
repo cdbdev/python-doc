@@ -69,11 +69,9 @@ map(lambda x, y: x+y, range(10), range(10))
 ```
 
 # 5. So which one to choose
-Simply put, 'List comprehensions' are used for creating lists, 'For loops' are better for doing something with the elements of a list.
+Simply put, **List comprehensions** are used for creating lists, **For loops** are better for doing something with the elements of a list.
 
 Using a comprehension for its side effects, or a for-loop for creating a list, is generally frowned upon.
-
-Also, whenever you have to choose a list creation method, try multiple implementations and consider what's easiest to read and understand in your specific scenario. 
 
 If performance is important, then you can use profiling tools to give you actionable data instead of relying on hunches of guesses about what works best.
 
