@@ -1,4 +1,4 @@
-Some intro
+How modules and packages are managed by Python.
 
 ---
 # 1. Naming conventions
