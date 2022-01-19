@@ -1,3 +1,6 @@
+Some intro
+
+---
 # 1. Naming conventions
 Python style is governed largely by a set of documents called **Python Enhancement Proposals**, abbreviated **PEP**.
 Not all PEPs are actually adopted, of course - that's why they're called "Proposals" - but some are. you can browse
