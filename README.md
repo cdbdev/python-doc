@@ -28,8 +28,7 @@ https://www.learnpython.org/
 https://medium.com/python-pandemonium/  
 
 ---
-Thematic break
-
+Thematic break  
 ---
 
 Some text
