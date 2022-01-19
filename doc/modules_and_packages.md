@@ -2,7 +2,7 @@
 
 
 How modules and packages are managed by Python.  
-working with imports
+Working with imports
 
 
 # 1. Naming conventions
