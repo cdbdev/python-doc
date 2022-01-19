@@ -1,4 +1,5 @@
-How modules and packages are managed by Python.
+How modules and packages are managed by Python.  
+working with imports
 
 ---
 # 1. Naming conventions
