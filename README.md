@@ -1,3 +1,8 @@
+---
+Introduction text
+
+---
+
 # Python documentation
 This repository contains collected documentation regarding the Python programming language.
 
@@ -26,10 +31,4 @@ https://docs.python.org
 https://dev.to/codemouse92/  
 https://www.learnpython.org/  
 https://medium.com/python-pandemonium/  
-
- ---
-Thematic break
- ---
-
-Some text
 
