@@ -4,6 +4,8 @@
 How modules and packages are managed by Python.  
 Working with imports
 
+---
+
 
 # 1. Naming conventions
 Python style is governed largely by a set of documents called **Python Enhancement Proposals**, abbreviated **PEP**.
