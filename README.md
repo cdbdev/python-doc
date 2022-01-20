@@ -1,6 +1,4 @@
----
 Introduction text
-
 ---
 
 # Python documentation
